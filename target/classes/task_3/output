@@ -1,0 +1,47 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/08/13 16:36:56 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Total number of records in the original file  : 93239
+Total number of records after applying business rules  : 88830
+Year-wise average Sentiment score of the text in the news items' headline for each topic
++---------+----+------------------------+
+|    Topic|year|Headline_sentiment_score|
++---------+----+------------------------+
+|  economy|2015|                     0.0|
+|  economy|2016|                     0.0|
+|  economy|2012|                     0.0|
+|    obama|2002|                     0.0|
+|palestine|2016|                     0.0|
++---------+----+------------------------+
+only showing top 5 rows
+
+Year-wise average Sentiment score of the text in the news items' title for each topic
++---------+----+---------------------+
+|    Topic|year|Title_sentiment_score|
++---------+----+---------------------+
+|  economy|2016|                  0.0|
+|palestine|2016|                  0.0|
+|microsoft|2016|                  0.0|
+|  economy|2012|                  0.0|
+|    obama|2002|                  0.0|
++---------+----+---------------------+
+only showing top 5 rows
+
+Top 10 most popular items by average Final value of the news items' popularity on Facebook, GooglePlus, LinkedIn
+22/08/13 16:37:14 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++----+---------+--------------------------+
+|rank|    Topic|avg_final_popularity_value|
++----+---------+--------------------------+
+|   1|  economy|                   16404.0|
+|   2|    obama|                   13696.0|
+|   3|    obama|                   11098.0|
+|   4|  economy|                   10617.0|
+|   5|    obama|                   10163.0|
+|   6|    obama|                    8199.0|
+|   7|microsoft|                    8109.0|
+|   8|    obama|                    7661.0|
+|   9|microsoft|                    6965.0|
+|  10|microsoft|                    6790.0|
++----+---------+--------------------------+
+only showing top 10 rows
+
+22/08/13 16:37:16 WARN Utils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
